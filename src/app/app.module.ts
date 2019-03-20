@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
+import { ControlButtonComponent } from './control-button/control-button.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { VideoPlayerComponent } from './video-player/video-player.component';
     HomeComponent,
     MenuComponent,
     FooterComponent,
-    VideoPlayerComponent
+    VideoPlayerComponent,
+    ControlButtonComponent
   ],
   imports: [
     BrowserModule,
