@@ -1,9 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
 import {VgCoreModule} from 'videogular2/core';
 import {VgControlsModule} from 'videogular2/controls';
 import {VgOverlayPlayModule} from 'videogular2/overlay-play';
 import {VgBufferingModule} from 'videogular2/buffering';
+import { NgxBootstrapSliderModule } from 'ngx-bootstrap-slider';
+import {NgxToggleModule} from "ngx-toggle";
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +17,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { VideoPlayerComponent } from './video-player/video-player.component';
 import { ControlButtonComponent } from './control-button/control-button.component';
+import {MoveService} from './_services/move.service';
 
 @NgModule({
   declarations: [
@@ -29,9 +35,15 @@ import { ControlButtonComponent } from './control-button/control-button.componen
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    NgxBootstrapSliderModule,
+    NgxToggleModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [
+    MoveService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

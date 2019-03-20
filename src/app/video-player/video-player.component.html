@@ -1,5 +1,11 @@
-<vg-player>
-  <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
-    <source src="http://static.videogular.com/assets/videos/videogular.mp4" type="video/mp4">
-  </video>
-</vg-player>
+<div>
+  <div class="d-flex justify-content-center">
+    <ngx-toggle></ngx-toggle>
+  </div><br>
+  <vg-player>
+    <video [vgMedia]="media" #media id="singleVideo" preload="auto" controls>
+      <source src="http://localhost:8080/camera/livestream.m3u8" type="video/mp4">
+    </video>
+  </vg-player>
+</div>
+

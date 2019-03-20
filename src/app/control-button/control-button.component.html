@@ -1,4 +1,9 @@
-<button type="button" class="btn btn-outline-secondary up-button">forward</button><br>
-<button type="button" class="btn btn-outline-secondary">left</button>
-<button type="button" class="btn btn-outline-secondary">backward</button>
-<button type="button" class="btn btn-outline-secondary">right</button>
+<div>
+  <button #buttonForward type="button" class="btn btn-outline-secondary btn-lg up-button" (click)="onClicked()">forward</button><br>
+  <button #buttonLeft type="button" class="btn btn-outline-secondary btn-lg">left</button>
+  <button #buttonBackward type="button" class="btn btn-outline-secondary btn-lg">backward</button>
+  <button #buttonRight type="button" class="btn btn-outline-secondary btn-lg">right</button><br><br><br>
+  <div class="d-flex justify-content-center">
+    <mv-slider [(value)]="value" [min]="1" [max]="100" [enabled]="enabled" [tooltip]="show" [tooltipPosition]="top" (change)="change()"></mv-slider>
+  </div>
+</div>

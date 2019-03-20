@@ -23,10 +23,21 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/videogular2/fonts/videogular.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/videogular2/fonts/videogular.css",
+              "node_modules/bootstrap-toggle/css/bootstrap-toggle.css",
+              "node_modules/bootstrap-slider/dist/css/bootstrap-slider.min.css"
+
             ],
-            "scripts": [],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap-toggle/js/bootstrap-toggle.js",
+              "node_modules/bootstrap-slider/dist/bootstrap-slider.min.js"
+
+
+            ],
             "es5BrowserSupport": true
           },
           "configurations": {
